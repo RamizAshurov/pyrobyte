@@ -2579,6 +2579,8 @@ strong {
 }
 .section.service {
   background-color: var(--gray-10);
+}
+.section.service:not(.horizontal-scroll-block) {
   padding-top: 0;
 }
 .section.service.footer {
