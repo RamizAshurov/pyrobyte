@@ -10601,6 +10601,7 @@ strong{
       justify-content:center;
       align-items:center;
       width:auto;
+      width: 100%;
       max-width:100%
   }
   .logo-link.main.w--current{
