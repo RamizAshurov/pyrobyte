@@ -2806,7 +2806,7 @@ strong{
 }
 .button-icon-nav:before{
   background-color: #FFFFFF;
-  border-radius: 15px;
+  border-radius: 15.9px;
   content: "";
   position: absolute;
   inset: 1px;
