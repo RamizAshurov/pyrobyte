@@ -8,7 +8,7 @@
 	<meta content="Веб-разработка" property="og:title">
 	<meta content="Веб-разработка" property="twitter:title">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="css/pyrobyte-new1.webflow.987467801.min.css" rel="stylesheet" type="text/css">
+	<link href="css/webflow.987467801.min.css" rel="stylesheet" type="text/css">
 	<style>
 	@media (min-width:992px) {
 		html.w-mod-js:not(.w-mod-ix) [data-w-id="bc67b132-3b29-ebe8-3714-d8053e6515cc"] {
@@ -46,83 +46,10 @@
 	<link href="images/6581a11ec6e11c6746fd76d0_pyrobyte.png" rel="apple-touch-icon">
 	<link href="https://www.pyrobyte.ru/web" rel="canonical">
 	<script type="application/ld+json">{ "@context": "https://schema.org/", "@type": "Organization", "name": "Logotip", "telephone": "+7 (499) 288-96-63", "email": "info@pyrobyte.ru", "address": { "@type": "PostalAddress", "addressLocality": "Барнаул", "streetAddress": "улица Лазурная 7" }} </script>
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-	! function(e, t, r, c, a, n, s) {
-		e[a] = e[a] || function() {
-			(e[a].a = e[a].a || []).push(arguments)
-		}, e[a].l = 1 * new Date;
-		for(var i = 0; i < document.scripts.length; i++)
-			if(document.scripts[i].src === c) return;
-		n = t.createElement(r), s = t.getElementsByTagName(r)[0], n.async = 1, n.src = c, s.parentNode.insertBefore(n, s)
-	}(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"), ym(49180180, "init", {
-		clickmap: !0,
-		trackLinks: !0,
-		accurateTrackBounce: !0,
-		webvisor: !0
-	});
-	</script>
-	<!-- Google Tag Manager -->
-	<script>
-	(function(w, d, s, l, i) {
-		w[l] = w[l] || [];
-		w[l].push({
-			'gtm.start': new Date().getTime(),
-			event: 'gtm.js'
-		});
-		var f = d.getElementsByTagName(s)[0],
-			j = d.createElement(s),
-			dl = l != 'dataLayer' ? '&l=' + l : '';
-		j.async = true;
-		j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-		f.parentNode.insertBefore(j, f);
-	})(window, document, 'script', 'dataLayer', 'GTM-NKPCVGR5');
-	</script>
-	<!-- End Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<script>
-	(function(w, d, s, l, i) {
-		w[l] = w[l] || [];
-		w[l].push({
-			'gtm.start': new Date().getTime(),
-			event: 'gtm.js'
-		});
-		var f = d.getElementsByTagName(s)[0],
-			j = d.createElement(s),
-			dl = l != 'dataLayer' ? '&l=' + l : '';
-		j.async = true;
-		j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-		f.parentNode.insertBefore(j, f);
-	})(window, document, 'script', 'dataLayer', 'GTM-KFH5SHK2');
-	</script>
-	<!-- End Google Tag Manager -->
 	<noscript>
 		<div><img src="https://mc.yandex.ru/watch/49180180" style="position:absolute; left:-9999px;" alt="" /></div>
 	</noscript>
-	<!-- /Yandex.Metrika counter -->
-	<!-- Meta Pixel Code -->
-	<script>
-	! function(f, b, e, v, n, t, s) {
-		if(f.fbq) return;
-		n = f.fbq = function() {
-			n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-		};
-		if(!f._fbq) f._fbq = n;
-		n.push = n;
-		n.loaded = !0;
-		n.version = '2.0';
-		n.queue = [];
-		t = b.createElement(e);
-		t.async = !0;
-		t.src = v;
-		s = b.getElementsByTagName(e)[0];
-		s.parentNode.insertBefore(t, s)
-	}(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '300317783018384');
-	fbq('track', 'PageView');
-	</script>
 	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=300317783018384&ev=PageView&noscript=1" /></noscript>
-	<!-- End Meta Pixel Code -->
 	<style>
 	.nav-link.w--current {
 		text-decoration: underline solid 1.4px;
@@ -1663,12 +1590,13 @@
 
 		let hash = window.location.hash;
 		if (hash) {
-			scroll.scrollTo(hash.slice(1), {
-				offset: -100,
-				duration: 800,
-			})
+			window.scrollTo(0,0)
+			setTimeout(() => window.scrollTo(0,0))
+			// scroll.scrollTo(hash.slice(1), {
+			// 	offset: -100,
+			// 	duration: 800,
+			// })
 		}
-		window.addEventListener("hashchange", e => console.log("!!"))
 	</script>
 	<script>
 	const swiperReviews = new Swiper('.swiper-reviews', {
