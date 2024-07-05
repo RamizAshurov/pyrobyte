@@ -2892,7 +2892,8 @@ strong {
   min-width:251px; */
   display:flex;
   /*------*/
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
+  background-color: #000000;
   border-radius: 16px;
   align-self: center;
   align-items: center;
@@ -2901,10 +2902,21 @@ strong {
   position: relative;
 }
 .button-icon-nav:before{
+  background-color: var(--white);
+  border-radius: 14px;
   content: "";
   position: absolute;
-  inset: 0;
+  inset: 1px;
+  z-index: 1;
+}
+.button-icon-nav > .button , 
+.button-icon-nav > .button-icon-nav__links {
+  position: relative;
   z-index: 2;
+}
+
+.button-icon-nav__links::before  {
+  background-color: var(--white);
 }
 .button-icon-nav__links {
   display: flex;
