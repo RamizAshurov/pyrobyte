@@ -2898,6 +2898,13 @@ strong {
   align-items: center;
   flex-shrink: 0;
   padding: 13px 28.5px;
+  position: relative;
+}
+.button-icon-nav:before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
 }
 .button-icon-nav__links {
   display: flex;

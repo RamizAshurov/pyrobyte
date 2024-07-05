@@ -2796,17 +2796,36 @@ strong{
   min-width:251px; */
   display:flex;
   /*------*/
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
+  background-color: #000000;
   border-radius: 16px;
   align-items: center;
   flex-shrink: 0;
   padding: 13px 28.5px;
+  position: relative;
+}
+.button-icon-nav:before{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: 1;
+}
+.button-icon-nav > .button , 
+.button-icon-nav > .button-icon-nav__links {
+  position: relative;
+  z-index: 2;
 }
 .button-icon-nav.dark {
-  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  /* border: 1px solid #FFFFFF; */
 }
 .button-icon-nav.dark .button-icon-nav__links::before  {
   background-color: #FFFFFF;
+}
+.button-icon-nav.dark::before {
+  background-color: #000000;
 }
 .button-icon-nav__links {
   display: flex;
