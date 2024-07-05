@@ -2805,7 +2805,7 @@ strong{
   position: relative;
 }
 .button-icon-nav:before{
-  background-color: #FFFFFF;
+  background-color: var(--white);
   border-radius: 15.9px;
   content: "";
   position: absolute;
@@ -2818,11 +2818,11 @@ strong{
   z-index: 2;
 }
 .button-icon-nav.dark {
-  background-color: #FFFFFF;
+  background-color: var(--white);
   /* border: 1px solid #FFFFFF; */
 }
 .button-icon-nav.dark .button-icon-nav__links::before  {
-  background-color: #FFFFFF;
+  background-color: var(--white);
 }
 .button-icon-nav.dark::before {
   background-color: #000000;
